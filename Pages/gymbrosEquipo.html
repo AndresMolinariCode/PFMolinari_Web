@@ -4,94 +4,142 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="icon" type="image/png" href="../img/GymbrosFitness.png" >
-    <link rel="stylesheet" href="../CSS/style.css">
+    <meta name="description" content="Gymbros Fitness es un gimnasio comprometido en brindarte la mejor experiencia de entrenamiento. Ofrecemos una amplia variedad de clases, equipos modernos y entrenadores profesionales para mejorar tu salud y forma física. ¡Inscríbete ahora!">
+    <meta name="keywords" content="gimnasio, fitness, entrenamiento, clases personalizadas, salud, forma física, inscripción, Gymbros Fitness">
+    <title>Gymbros Fitness - Contacto</title>
+    <link rel="icon" type="image/png" href="./img/GymbrosFitness.png" >
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../sass/main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
 </head>
 <body>
-    <div>    
-        <header>
-            <a href="index.html">
-                <img src="../img/GymbrosFitness.png" alt="Logo de la empresa" height="100px">
-                <img src="../img/gymbros_logo_texto.png" alt="Logo de la empresa" height="100px">
-            </a>
-            <nav >
-                <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="gymbrosVideos.html">Videos</a></li>
-                    <li><a href="gymbrosRutinas.html">Rutinas</a></li>
-                    <li><a href="gymbrosEquipo.html">Equipo</a></li>
-                    <li><a href="gymbrosContacto.html">Contacto</a></li>
-                </ul>
-            </nav>            
-        </header>        
+    <div class="floating-icon">
+        <a href="https://api.whatsapp.com/send?phone=+1234567890" target="_blank" class="whatsapp-icon">
+            <img src="../img/Logos/logo_whatsapp.png" alt="Icono de WhatsApp">
+        </a>        
     </div>
 
-    <div id="cuerpo">
-        <br>
-        <br>
-        <br>
-        <div class="personal-container">
-            <div class="personal-item">
-              <img src="../img/personalTrainer1.jpg" alt="Foto del personal 1">
-              <h3>Primitiva Badía</h3>
-              <p>Profesora de Spinning</p>
+    <div>
+        <header>
+          <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+            <a href="../index.html" style="text-decoration: none;">
+              <img src="../img/GymbrosFitness.png" alt="Logo de la empresa" class="img-fluid logo-img logo-imagen">
+              <img src="../img/gymbros_logo_texto.png" alt="Logo de la empresa" class="img-fluid logo-img logo-letters">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ms-auto justify-content-end">
+                <li class="nav-item">
+                  <a class="nav-link text-white ms-3" href="../index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white ms-3" href="../Pages/gymbrosVideos.html">Videos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white ms-3">Rutinas</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white ms-3">Equipo</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white ms-3" href="../Pages/gymbrosContacto.html">Contacto</a>
+                </li>
+              </ul>
             </div>
-            <div class="personal-item">
-              <img src="../img/personalTrainer2.jpg" alt="Foto del personal 2">
-              <h3>Febe Rubio</h3>
-              <p>Profesor de Hipertrofia</p>
-            </div>
-            <div class="personal-item">
-                <img src="../img/personalTrainer4.jpg" alt="Foto del personal 2">
-                <h3>Elisa Bayón</h3>
-                <p>Profesora de Fitness</p>
-            </div>
-            <div class="personal-item">
-                <img src="../img/personalTrainer3.jpg" alt="Foto del personal 2">
-                <h3>Antonia del Elías</h3>
-                <p>Profesor de HITT</p>
-            </div>                    
-        </div>
-        <div class="personal-container">
-            <div class="personal-item">
-                <img src="../img/personalTrainer5.jpg" alt="Foto del personal 1">
-                <h3>Primitiva Badía</h3>
-                <p>Profesora de Spinning</p>
+          </nav>
+      </header>
+    <div>
+
+    <div class="background-image-container d-flex justify-content-center align-items-center">    
+        <div class="row">
+            <div class="col-md-6">
+                <div class="row g-sm-2">
+                    <div class="col-md-6 mb-4 text-center">
+                        <img src="../img/PersonalTrainers/personalTrainer1.jpg" alt="Foto del personal 1" class="circular-image">
+                        <h3>Primitiva Badía</h3>
+                        <p>Profesora de Spinning</p>
+                        <a href="#" class="btn btn-danger mb-2">Contactar</a>                            
+                    </div>
+                    <div class="col-md-6 mb-4 text-center">
+                        <img src="../img/PersonalTrainers/personalTrainer2.jpg" alt="Foto del personal 2" class="circular-image">
+                        <h3>Febe Rubio</h3>
+                        <p>Profesor de Hipertrofia</p>
+                        <a href="#" class="btn btn-danger mb-2">Contactar</a>                           
+                    </div>
+                    <div class="col-md-6 mb-4 text-center">                            
+                        <img src="../img/PersonalTrainers/personalTrainer3.jpg" alt="Foto del personal 2" class="circular-image">
+                        <h3>Elisa Bayón</h3>
+                        <p>Profesora de Fitness</p>   
+                        <a href="#" class="btn btn-danger mb-2">Contactar</a>                         
+                    </div>
+                    <div class="col-md-6 mb-4 text-center">
+                        <img src="../img/PersonalTrainers/personalTrainer4.jpg" alt="Foto del personal 2" class="circular-image">
+                        <h3>Antonia del Elías</h3>
+                        <p>Profesor de HITT</p>
+                        <a href="#" class="btn btn-danger mb-2">Contactar</a>
+                    </div>                        
                 </div>
-            <div class="personal-item">
-                <img src="../img/personalTrainer7.jpg" alt="Foto del personal 2">
-                <h3>Febe Rubio</h3>
-                <p>Profesor de Hipertrofia</p>
+            </div>
+            <div class="col-md-6">
+                <div class="row g-sm-2">
+                    <div class="col-md-6 mb-4 text-center">
+                        <img src="../img/PersonalTrainers/personalTrainer5.jpg" alt="Foto del personal 1" class="circular-image">
+                        <h3>Primitiva Badía</h3>
+                        <p>Profesora de Spinning</p>  
+                        <a href="#" class="btn btn-danger mb-2">Contactar</a>
+                    </div>
+                    <div class="col-md-6 mb-4 text-center">
+                        <img src="../img/PersonalTrainers/personalTrainer6.jpg" alt="Foto del personal 1" class="circular-image">
+                        <h3>Febe Rubio</h3>
+                        <p>Profesor de Hipertrofia</p>
+                        <a href="#" class="btn btn-danger mb-2">Contactar</a>
+                    </div>
+                    <div class="col-md-6 mb-4 text-center">
+                        <img src="../img/PersonalTrainers/personalTrainer7.jpg" alt="Foto del personal 1" class="circular-image">
+                        <h3>Elisa Bayón</h3>
+                        <p>Profesora de Fitness</p>
+                        <a href="#" class="btn btn-danger mb-2">Contactar</a>                            
+                    </div>
+                    <div class="col-md-6 mb-4 text-center">
+                        <img src="../img/PersonalTrainers/personalTrainer8.jpg" alt="Foto del personal 1" class="circular-image">
+                        <h3>Antonia del Elías</h3>
+                        <p>Profesor de HITT</p>
+                        <a href="#" class="btn btn-danger mb-2">Contactar</a>
+                    </div>
                 </div>
-            <div class="personal-item">
-                <img src="../img/personalTrainer6.jpg" alt="Foto del personal 2">
-                <h3>Elisa Bayón</h3>
-                <p>Profesora de Fitness</p>
             </div>
-            <div class="personal-item">
-                <img src="../img/personalTrainer8.jpg" alt="Foto del personal 2">
-                <h3>Antonia del Elías</h3>
-                <p>Profesor de HITT</p>
-            </div>
-        </div>
+        </div>                
     </div>
     
-    <footer>
-        <div class="footer-content">
-            <div class="social-icons">
-            <a href="#" target="_blank" class="social-icon">
-                <img src="../img/Logos/logo_facebook.png" alt="Logo de Facebook">
-            </a>
-            <a href="#" target="_blank" class="social-icon">
-                <img src="../img/Logos/logo_twitter.png" alt="Logo de Twitter">
-            </a>
-            <a href="#" target="_blank" class="social-icon">
-                <img src="../img/Logos/logo_instagram.png" alt="Logo de Instagram">
-            </a>
+    <div>
+        <footer class="bg-danger text-white">
+            <div class="container py-4">
+                <div class="row justify-content-center">
+                    <div class="col-12 text-center">
+                        <h4>Síguenos en redes sociales:</h4>
+                    </div>
+                    <div class="col-12 text-center">
+                        <a href="../index.html" class="social-icon" style="text-decoration: none;">
+                            <img src="../img/Logos/logo_facebook_gris.png" alt="Logo de Facebook" class="img-fluid social-icon-img">
+                        </a>
+                        <a href="../index.html" class="social-icon" style="text-decoration: none;">
+                            <img src="../img/Logos/logo_twitter_gris.png" alt="Logo de Twitter" class="img-fluid social-icon-img">
+                        </a>
+                        <a href="../index.html" class="social-icon" style="text-decoration: none;">
+                            <img src="../img/Logos/logo_instagram_gris.png" alt="Logo de Instagram" class="img-fluid social-icon-img">
+                        </a>
+                    </div>
+                    <div class="col-12 text-center mt-3">
+                        <p>&copy; Gymbros 2023 Todos los derechos reservados</p>
+                    </div>
+                </div>
             </div>
-            <p>&copy; Gymbros 2023 Todos los derechos reservados</p>
-        </div>
-    </footer> 
+        </footer>
+    </div> 
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script> 
 </body>
 </html>

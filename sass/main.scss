@@ -65,6 +65,17 @@ body {
   max-width: 100%;
 }
 
+.circular-image {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+
+.personal-item {
+  margin-left: 0px; /* Espaciado entre elementos */
+}
+
 //Aplicacion de animaciones
 .btn-danger:hover {
   transform: scale(1.1); 
