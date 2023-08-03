@@ -1,108 +1,204 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="icon" type="image/png" href="../img/gymbrosFavIcon-removebg.png" >
-    <link rel="stylesheet" href="../CSS/style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Gymbros Fitness es un gimnasio comprometido en brindarte la mejor experiencia de entrenamiento. Ofrecemos una amplia variedad de clases, equipos modernos y entrenadores profesionales para mejorar tu salud y forma física. ¡Inscríbete ahora!">
+  <meta name="keywords" content="gimnasio, fitness, entrenamiento, clases personalizadas, salud, forma física, inscripción, Gymbros Fitness">
+  <title>Gymbros Fitness - Contacto</title>
+  <link rel="icon" type="image/png" href="./img/GymbrosFitness.png" >
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../sass/main.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">  
 </head>
 <body>
-    <div>    
-        <header>
-            <a href="index.html">
-                <img src="../img/GymbrosFitness.png" alt="Logo de la empresa" height="100px">
-                <img src="../img/gymbros_logo_texto.png" alt="Logo de la empresa" height="100px">
-            </a>
-            <nav >
-                <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="gymbrosVideos.html">Videos</a></li>
-                    <li><a href="gymbrosRutinas.html">Rutinas</a></li>
-                    <li><a href="gymbrosEquipo.html">Equipo</a></li>
-                    <li><a href="gymbrosContacto.html">Contacto</a></li>
-                </ul>
-            </nav>            
-        </header>        
+    <div class="floating-icon">
+        <a href="https://api.whatsapp.com/send?phone=+1234567890" target="_blank" class="whatsapp-icon">
+            <img src="../img/Logos/logo_whatsapp.png" alt="Icono de WhatsApp">
+        </a>        
     </div>
 
-    <div id="cuerpo">
-        <br>
-        <br>
-        <div class="schedule-grid">
+    <div>
+      <header>
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+          <a href="../index.html" style="text-decoration: none;">
+            <img src="../img/GymbrosFitness.png" alt="Logo de la empresa" class="img-fluid logo-img logo-imagen">
+            <img src="../img/gymbros_logo_texto.png" alt="Logo de la empresa" class="img-fluid logo-img logo-letters">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto justify-content-end">
+              <li class="nav-item">
+                <a class="nav-link text-white ms-3" href="../index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white ms-3" href="../Pages/gymbrosVideos.html">Videos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white ms-3"  href="../Pages/gymbrosRutinas.html">Rutinas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white ms-3"  href="../Pages/gymbrosEquipo.html">Equipo</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white ms-3" href="../Pages/gymbrosContacto.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+    </div>    
+    
+    <div class="background-image-container d-flex justify-content-center align-items-center">
+      <div class="container"> 
+        <h1 class="text-center mt-3 mb-4">Actividades Semanales</h1>       
+        <div class="col-md-12">
+
+          <div class="d-md-none">
+            <select id="daySelector" class="form-select mb-3 d-md-none">
+              <option value="all" selected>Mostrar todos</option>
+              <option value="Lunes">Lunes</option>
+              <option value="Martes">Martes</option>
+              <option value="Miércoles">Miércoles</option>
+              <option value="Jueves">Jueves</option>
+              <option value="Viernes">Viernes</option>
+            </select>
+          </div>        
+
+          <div class="schedule-grid">
             <div class="time-cell"></div>
-            <div class="day-cell">Lunes</div>
-            <div class="day-cell">Martes</div>
-            <div class="day-cell">Miércoles</div>
-            <div class="day-cell">Jueves</div>
-            <div class="day-cell">Viernes</div>
+            <div class="day-cell" data-day="Lunes">Lunes</div>
+            <div class="day-cell" data-day="Martes">Martes</div>
+            <div class="day-cell" data-day="Miércoles">Miércoles</div>
+            <div class="day-cell" data-day="Jueves">Jueves</div>
+            <div class="day-cell" data-day="Viernes">Viernes</div>
           </div>
           <div class="schedule-grid">
             <div class="time-cell">9:00 AM - 10:00 AM</div>
-            <div class="event-cell">Clase de yoga</div>
-            <div class="event-cell"></div>
-            <div class="event-cell">Clase de yoga</div>
-            <div class="event-cell"></div>
-            <div class="event-cell">Clase de yoga</div>
+            <div class="day-cell" data-day="Lunes">Clase de yoga</div>
+            <div class="day-cell" data-day="Martes">&nbsp</div>
+            <div class="day-cell" data-day="Miércoles">Clase de yoga</div>
+            <div class="day-cell" data-day="Jueves">&nbsp</div>
+            <div class="day-cell" data-day="Viernes">Clase de yoga</div>
           </div>
           <div class="schedule-grid">
             <div class="time-cell">11:00 AM - 12:00 PM</div>
-            <div class="event-cell"></div>
-            <div class="event-cell">Entrenamiento de cardio</div>
-            <div class="event-cell"></div>
-            <div class="event-cell">Entrenamiento de cardio</div>
-            <div class="event-cell"></div>
+            <div class="day-cell" data-day="Lunes">&nbsp</div>
+            <div class="day-cell" data-day="Martes">Entrenamiento de cardio</div>
+            <div class="day-cell" data-day="Miércoles">&nbsp</div>
+            <div class="day-cell" data-day="Jueves">Entrenamiento de cardio</div>
+            <div class="day-cell" data-day="Viernes">&nbsp</div>
           </div>  
           <div class="schedule-grid">
             <div class="time-cell">13:00 PM - 14:00 PM</div>
-            <div class="event-cell">Clase HITT</div>
-            <div class="event-cell"></div>
-            <div class="event-cell">Clase HITT</div>
-            <div class="event-cell"></div>
-            <div class="event-cell">Clase HITT</div>
+            <div class="day-cell" data-day="Lunes">Clase HITT</div>
+            <div class="day-cell" data-day="Martes">&nbsp</div>
+            <div class="day-cell" data-day="Miércoles">Clase HITT</div>
+            <div class="day-cell" data-day="Jueves">&nbsp</div>
+            <div class="day-cell" data-day="Viernes">Clase HITT</div>
           </div> 
           <div class="schedule-grid">
             <div class="time-cell">15:00 PM - 16:00 PM</div>
-            <div class="event-cell"></div>
-            <div class="event-cell">Core Express</div>
-            <div class="event-cell"></div>
-            <div class="event-cell">Core Express</div>
-            <div class="event-cell"></div>
+            <div class="day-cell" data-day="Lunes">&nbsp</div>
+            <div class="day-cell" data-day="Martes">Core Express</div>
+            <div class="day-cell" data-day="Miércoles">&nbsp</div>
+            <div class="day-cell" data-day="Jueves">Core Express</div>
+            <div class="day-cell" data-day="Viernes">&nbsp</div>
           </div>
           <div class="schedule-grid">
             <div class="time-cell">17:00 PM - 18:00 PM</div>
-            <div class="event-cell">Strong Legs</div>
-            <div class="event-cell"></div>
-            <div class="event-cell">Strong Legs</div>
-            <div class="event-cell"></div>
-            <div class="event-cell">Strong Legs</div>
+            <div class="day-cell" data-day="Lunes">Strong Legs</div>
+            <div class="day-cell" data-day="Martes">&nbsp</div>
+            <div class="day-cell" data-day="Miércoles">Strong Legs</div>
+            <div class="day-cell" data-day="Jueves">&nbsp</div>
+            <div class="day-cell" data-day="Viernes">Strong Legs</div>
           </div>
           <div class="schedule-grid">
             <div class="time-cell">19:00 PM - 20:00 PM</div>
-            <div class="event-cell"></div>
-            <div class="event-cell">Spinning</div>
-            <div class="event-cell"></div>
-            <div class="event-cell">Spinning</div>
-            <div class="event-cell"></div>
-          </div>       
-    </div>
-    
-    <footer>
-        <div class="footer-content">
-            <div class="social-icons">
-            <a href="#" target="_blank" class="social-icon">
-                <img src="../img/Logos/logo_facebook.png" alt="Logo de Facebook">
-            </a>
-            <a href="#" target="_blank" class="social-icon">
-                <img src="../img/Logos/logo_twitter.png" alt="Logo de Twitter">
-            </a>
-            <a href="#" target="_blank" class="social-icon">
-                <img src="../img/Logos/logo_instagram.png" alt="Logo de Instagram">
-            </a>
+            <div class="day-cell" data-day="Lunes">&nbsp</div>
+            <div class="day-cell" data-day="Martes">Spinning</div>
+            <div class="day-cell" data-day="Miércoles">&nbsp</div>
+            <div class="day-cell" data-day="Jueves">Spinning</div>
+            <div class="day-cell" data-day="Viernes">&nbsp</div>
+          </div>              
+        </div>        
+      </div>
+    </div>    
+
+    <!--
+    <div class="background-image-container d-flex justify-content-center align-items-center">
+      <div class="container">
+        
+        <div class="container">
+          <div class="col-md-12">
+            
+            <select id="daySelector" class="form-select mb-3 d-md-none">
+              <option value="all" selected>Mostrar todos</option>
+              <option value="Lunes">Lunes</option>
+              <option value="Martes">Martes</option>
+              <option value="Miércoles">Miércoles</option>
+              <option value="Jueves">Jueves</option>
+              <option value="Viernes">Viernes</option>
+            </select>
+            
+            
+            <div class="schedule-grid">
+              
+              <div class="time-cell"></div>
+              <div class="day-cell" data-day="Lunes">Lunes</div>
+              <div class="day-cell" data-day="Martes">Martes</div>
+              <div class="day-cell" data-day="Miércoles">Miércoles</div>
+              <div class="day-cell" data-day="Jueves">Jueves</div>
+              <div class="day-cell" data-day="Viernes">Viernes</div>
             </div>
-            <p>&copy; Gymbros 2023 Todos los derechos reservados</p>
+            <div class="schedule-grid">
+              
+              <div class="time-cell">9:00 AM - 10:00 AM</div>
+              <div class="day-cell" data-day="Lunes">Clase de yoga</div>
+              <div class="day-cell" data-day="Martes"></div>
+              <div class="day-cell" data-day="Miércoles">Clase de yoga</div>
+              <div class="day-cell" data-day="Jueves"></div>
+              <div class="day-cell" data-day="Viernes">Clase de yoga</div>
+              
+              
+            </div>
+          </div>
         </div>
-    </footer> 
+      </div>
+    </div>
+    -->    
+
+    <div>
+      <footer class="bg-danger text-white">
+          <div class="container py-4">
+              <div class="row justify-content-center">
+                  <div class="col-12 text-center">
+                      <h4>Síguenos en redes sociales:</h4>
+                  </div>
+                  <div class="col-12 text-center">
+                      <a href="../index.html" class="social-icon" style="text-decoration: none;">
+                          <img src="../img/Logos/logo_facebook_gris.png" alt="Logo de Facebook" class="img-fluid social-icon-img">
+                      </a>
+                      <a href="../index.html" class="social-icon" style="text-decoration: none;">
+                          <img src="../img/Logos/logo_twitter_gris.png" alt="Logo de Twitter" class="img-fluid social-icon-img">
+                      </a>
+                      <a href="../index.html" class="social-icon" style="text-decoration: none;">
+                          <img src="../img/Logos/logo_instagram_gris.png" alt="Logo de Instagram" class="img-fluid social-icon-img">
+                      </a>
+                  </div>
+                  <div class="col-12 text-center mt-3">
+                      <p>&copy; Gymbros 2023 Todos los derechos reservados</p>
+                  </div>
+              </div>
+          </div>
+      </footer>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="../js/script.js"></script>
 </body>
 </html>
