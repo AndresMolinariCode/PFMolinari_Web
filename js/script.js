@@ -41,4 +41,42 @@ $(document).ready(function() {
         showSelectedDay(currentSelectedDay);
       }
     });
+
+    const videos = [
+        "https://www.youtube.com/embed/_AhC7mm-Prk",
+        "https://www.youtube.com/embed/jP0by40KfjE",
+        "https://www.youtube.com/embed/ef2EqYFrIdo",
+        "https://www.youtube.com/embed/tRBqySH_Aus",
+        "https://www.youtube.com/embed/7orY0BT8xxY",
+        "https://www.youtube.com/embed/D0zPn4nsKOo",
+        "https://www.youtube.com/embed/_0TKBP6B_sw",
+        "https://www.youtube.com/embed/P0HfsZnc9rk",
+        "https://www.youtube.com/embed/ZR-jeJpVIEE"        
+      ];
+    
+      function createVideoIframe(src) {
+        const iframe = document.createElement("iframe");
+        iframe.width = "100%";
+        iframe.height = "100%";
+        iframe.src = src;
+        iframe.title = "YouTube video player";
+        iframe.frameBorder = "0";
+        iframe.allow =
+          "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
+        iframe.allowFullscreen = true;
+        iframe.loading = "lazy"; // Opcional: carga perezosa
+        return iframe;
+      }
+    
+      const videoContainer = document.getElementById("videoContainer");
+    
+      videos.forEach(videoSrc => {
+        const col = document.createElement("div");
+        col.className = "col-lg-4 col-md-6 col-sm-12 mb-4";
+        const media = document.createElement("div");
+        media.className = "media";
+        media.appendChild(createVideoIframe(videoSrc));
+        col.appendChild(media);
+        videoContainer.appendChild(col);
+      });
   });  
